@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensagem SMS</title>
+</head>
+<body>
+    <h1>Enviar Mensagem SMS</h1>
+    <form action="/enviar-sms" method="POST">
+        <label for="phoneNumber">Número de Telefone:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="00351932733742" required><br>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Olá, como você está?" required></textarea><br>
+        
+        <button type="submit">Enviar SMS</button>
+    </form>
+</body>
+</html>
